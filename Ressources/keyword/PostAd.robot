@@ -37,6 +37,7 @@ DeposerAnonce
     Click Element    ${idannee}
     Wait Until Page Contains    2010
     Select From List By Label    ${idannee}    2010
+    Scroll Element Into View    ${IdCarrosserie}
     Click Element    ${IdCarrosserie}
     Wait Until Page Contains    Cabriolet
     Select From List By label    ${IdCarrosserie}    Cabriolet
@@ -66,10 +67,17 @@ DeposerAnonce
     Scroll Element Into View    ${idpremiermain}
     Wait Until Element Is Visible    ${idpremiermain}
     #Select Checkbox    id="enrichi-7800001_60_1"
-    Execute JavaScript    document.getElementById('enrichi-7800001_60_1').click()
-    Execute JavaScript    document.querySelector('input[name="enrichi-7800001_60[]"]').click()
+    #Execute JavaScript    document.getElementById('enrichi-7800001_60_1').click()
+    #Execute JavaScript    document.querySelector('input[name="enrichi-7800001_60[]"]').click()
+    Input Text    ${idprix}    1500
+    Click Element    ${cochePrixnegociable}
+    Wait Until Element Is Visible    ${idpays}
+    Click Element    ${idpays}
+    Wait Until Page Contains    Algerie
+    Select From List By Label    ${idpays}    Algerie
+    Input Text    ${idcommune}    Alger
+    #Choose File    ${telechargerphoto}    C:\Users\motal\OneDrive\Desktop\automatisation\RF\paruvendu\voiture.png
     
-
 
       
 

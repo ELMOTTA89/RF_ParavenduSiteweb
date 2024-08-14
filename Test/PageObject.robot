@@ -14,16 +14,17 @@ TC0:Open page
     OpenPage
     Close Browser
 
-TC0: DeposerAnonce
+TC1: DeposerAnonce
     [Documentation]    deposer une annoce gratuite
     [Tags]    critical2
     OpenPage
     DeposerAnonce
     Close Browser
 
-TC1:inscription
+TC2:inscription
     [Documentation]    Login
     [Tags]    critical3
     OpenPage
     loginOK
     Close Browser
+
